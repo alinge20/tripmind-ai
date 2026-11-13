@@ -1,5 +1,7 @@
 # TripMind AI
 
+[![Validate TripMind](https://github.com/alinge20/tripmind-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/alinge20/tripmind-ai/actions/workflows/ci.yml)
+
 Asistente de viajes con inteligencia artificial: ayuda a pasar de una idea a un itinerario organizado,
 con presupuesto claro y enlaces a proveedores autorizados para reservar.
 
