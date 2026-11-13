@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/*
+  Tokens de diseño de TripMind AI.
+  Tailwind v4 genera utilidades a partir de estas variables: --color-brand-700 -> bg-brand-700, text-brand-700...
+  Cambiar la identidad visual = cambiar estos valores, no cada componente.
+*/
+@theme {
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+
+  /* Azul profundo: color principal (confianza, organización). */
+  --color-brand-50: #eef4fb;
+  --color-brand-100: #d9e6f5;
+  --color-brand-200: #b4cdeb;
+  --color-brand-500: #2f6bb8;
+  --color-brand-600: #1d5299;
+  --color-brand-700: #173f75;
+  --color-brand-800: #12325d;
+  --color-brand-900: #0d2547;
+  --color-brand-950: #08182f;
+
+  /* Turquesa: acento (descubrimiento, frescura). */
+  --color-accent-50: #e8faf7;
+  --color-accent-100: #c6f2ea;
+  --color-accent-500: #13a89e;
+  --color-accent-600: #0e8a82;
+  --color-accent-700: #0b6e68;
+
+  --radius-card: 1.25rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: #f8fafc;
+  color: var(--color-slate-900);
+}
+
+/* Foco visible y consistente para navegación con teclado. */
+:focus-visible {
+  outline: 3px solid var(--color-accent-500);
+  outline-offset: 2px;
+}
